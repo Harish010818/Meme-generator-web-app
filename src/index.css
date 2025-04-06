@@ -9,8 +9,42 @@
   margin: auto;
   margin-top: 1rem;
   background-color: darkslategrey;
-  
 }
+
+/* Responsive Styles */
+
+/* Mobile first (by default handled, but still) */
+@media (max-width: 480px) {
+  .site-wrap {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .site-wrap {
+    width: 80%;
+    padding: 1.5rem;
+  }
+}
+
+/* Laptops and small desktops */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .site-wrap {
+    width: 70%;
+    padding: 2rem;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1201px) {
+  .site-wrap {
+    width: 60%;
+    padding: 2rem;
+  }
+}
+
 
 body {
   font-family: "Karla", sans-serif;
